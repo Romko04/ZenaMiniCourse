@@ -123,6 +123,14 @@ table {
     src: url('../fonts/Kharkiv.otf') format('otf');
 }
 
+@font-face {
+    font-family: '"Kharkiv Tone';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/KharkivTone.ttf') format('ttf');
+}
+
+
 
 
 
@@ -775,7 +783,6 @@ section.who::after {
 
 .who__items-img {
     max-height: 11rem;
-    max-width: 16rem;
 }
 
 section.who {
