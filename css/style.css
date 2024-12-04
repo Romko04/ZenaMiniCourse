@@ -103,28 +103,28 @@ table {
 }
 
 @font-face {
-    font-family: '"Kharkiv Tone';
+    font-family: 'Kharkiv Tone';
     font-weight: 400;
     font-style: normal;
     src: url('../fonts/Kharkiv.woff') format('woff');
 }
 
 @font-face {
-    font-family: '"Kharkiv Tone';
+    font-family: 'Kharkiv Tone';
     font-weight: 400;
     font-style: normal;
     src: url('../fonts/Kharkiv.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: '"Kharkiv Tone';
+    font-family: 'Kharkiv Tone';
     font-weight: 400;
     font-style: normal;
     src: url('../fonts/Kharkiv.otf') format('otf');
 }
 
 @font-face {
-    font-family: '"Kharkiv Tone';
+    font-family: 'Kharkiv Tone';
     font-weight: 400;
     font-style: normal;
     src: url('../fonts/KharkivTone.ttf') format('ttf');
@@ -770,7 +770,6 @@ section.who::after {
 .who__items-img {
     height: 100%;
     position: absolute;
-    object-fit: cover;
     top: 0;
     right: 0;
 }
@@ -781,9 +780,6 @@ section.who::after {
     object-fit: contain;
 }
 
-.who__items-img {
-    max-height: 11rem;
-}
 
 section.who {
     padding-top: 20rem !important;
@@ -1431,7 +1427,8 @@ a:not(.button):hover {
         top: auto;
         right: 0;
         bottom: 0;
-        max-height: 12rem;
+        max-height: 10rem;
+        max-width: 12rem;
     }
 
     .who__items li:not(.who__items li:first-child)::after, .about__list-item::after {
