@@ -724,6 +724,7 @@ section.who::after {
     font-size: 6rem;
     line-height: 119%;
     letter-spacing: -0.02em;
+    text-transform: uppercase;
     color: #800000;
 }
 
@@ -769,6 +770,12 @@ section.who::after {
 .who__items-img img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+}
+
+.who__items-img {
+    max-height: 11rem;
+    max-width: 16rem;
 }
 
 section.who {
@@ -1092,6 +1099,9 @@ section.lessons {
     z-index: 10;
     transform: translateY(100%);
     transition: all .3s ease;
+    box-shadow: -2px -8px 112px -37px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px -8px 112px -37px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -8px 112px -37px rgba(0, 0, 0, 0.75);
 }
 
 .fixed-container a {
@@ -1121,19 +1131,55 @@ a:not(.button):hover {
     box-shadow: none;
 }
 
+.bonuses__title {
+    position: relative;
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
+
+.bonuses__title::after{
+   content: '';
+   background-image: url('../img/surprise.png');
+   background-size: cover;
+   object-position: center;
+   background-repeat: no-repeat;
+   position: absolute;
+   right: -7rem;
+   top: 0;
+   width: 6rem;
+   height: 6rem;
+}
 
 
 
 
 
 
-
+.footer {
+    padding-bottom: 12rem;
+}
 
 
 
 
 
 @media (max-width: 991.98px) {
+
+    .footer {
+        padding-bottom: 9rem;
+    }
+
+    .bonuses__title {
+        width: 100%;
+        
+    }
+    .bonuses__title::after {
+        width: 3rem;
+        height: 3rem;
+        right: 3rem;
+        top: -.5rem;
+    }
     .hero__title {
         font-size: 1.7rem;
     }
@@ -1174,7 +1220,7 @@ a:not(.button):hover {
         font-size: 1.6rem;
     }
     .clouds.bottom {
-        height: 9.5rem;
+        height: 11.5rem;
     }
 
     section.hero {
@@ -1183,7 +1229,7 @@ a:not(.button):hover {
 
     .hero__subtext {
         margin-top: 1.7rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         padding-bottom: 0;
     }
 
@@ -1210,8 +1256,12 @@ a:not(.button):hover {
         bottom: -.35rem;
     }
 
+    .hero__content-top {
+        margin-top: 5.9rem;
+    }
+
     .hero__content-bottom {
-        /* margin-top: 4.9rem; */
+        margin-bottom: 2rem;
     }
 
     .instagram {
@@ -1275,17 +1325,21 @@ a:not(.button):hover {
     }
 
     section:not(section.hero)::after {
-        background-image: url(../img/khwyliaPhone.png);
-        height: 14rem;
+        background-image: url('../img/khwyliaPhone.png');
+        height: 4rem;
         left: 0;
         top: 0;
         right: 0;
         width: 100%;
     }
 
+    .container {
+        padding: 0 2rem;
+    }
+
 
     .title {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         line-height: normal;
         z-index: 3;
         position: relative;
@@ -1297,6 +1351,7 @@ a:not(.button):hover {
 
     section.about {
         padding-top: 3rem;
+        padding-bottom: 5rem;
     }
 
     .about__title  {
@@ -1306,7 +1361,7 @@ a:not(.button):hover {
 
     .about__content {
         flex-direction: column;
-        margin-top: 8rem;
+        margin-top: 5rem;
         gap: 6rem;
     }
 
@@ -1333,7 +1388,7 @@ a:not(.button):hover {
     }
 
     .who__items-content__text strong {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         line-height: 119%;
     }
 
@@ -1354,6 +1409,7 @@ a:not(.button):hover {
     }
     .who__items-content__text strong {
         width: 100%;
+        text-transform: uppercase;
         display: block;
     }
 
@@ -1396,12 +1452,11 @@ a:not(.button):hover {
         font-size: 2.3rem;
     }
     section.who {
-        padding-bottom: 8rem;
+        padding-bottom: 6rem;
+        padding-top: 8rem !important;
+
     }
 
-    section.who {
-        padding-top: 14rem !important;
-    }
 
     .how__list {
         margin-top: 8rem;
