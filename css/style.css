@@ -1257,7 +1257,7 @@ a:not(.button):hover {
     }
 
     .hero__content-top {
-        margin-top: 5.9rem;
+        margin-top: 8.9rem;
     }
 
     .hero__content-bottom {
@@ -1265,20 +1265,20 @@ a:not(.button):hover {
     }
 
     .instagram {
-        top: 8rem;
+        top: 9rem;
         z-index: 7;
         right: 0;
     }
 
     .instagram span {
-        font-size: .7rem;
-        padding: .6rem 1rem;
+        font-size: .9rem;
+        padding: .8rem 1.2rem;
         left: -1rem;
     }
 
     .instagram__img {
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
         padding: .2rem;
     }
     .timer__heading {
@@ -1303,7 +1303,7 @@ a:not(.button):hover {
     .timer__countdown {
         padding: 1rem .8rem;
         gap: .5rem;
-        justify-content: flex-start;
+        justify-content: center;
         max-width: 10.8rem;
     }
     .timer__time-wrapper {
@@ -1459,8 +1459,20 @@ a:not(.button):hover {
 
 
     .how__list {
-        margin-top: 8rem;
+        margin-top: 5rem;
         gap: 6.8rem;
+    }
+
+    section.lessons {
+        padding-bottom: 5rem;
+    }
+
+    .swiper-reviews {
+        margin-bottom: 5rem;
+    }
+
+    .swiper-slide {
+        padding: 2rem 0;
     }
 
     .how__list-img {
